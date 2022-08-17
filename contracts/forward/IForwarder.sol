@@ -22,10 +22,4 @@ interface IForwarder {
     )
     external payable
     returns (bool success, bytes memory ret);
-
-    function execute2() external payable returns (bool success, bytes memory ret);
-    function execute3(
-        ForwardRequest calldata forwardRequest,
-        bytes calldata signature
-    ) external payable returns (bool success, bytes memory ret);
 }
